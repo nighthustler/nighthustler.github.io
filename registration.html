@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <title>registration.com</title>
+
+
+    <head>
+        <H1>REGISTRATION FORM</H1>
+        <style>
+
+BODY{
+    background-image: linear-gradient(rgb(211, 211, 221), rgb(109, 56, 110));
+    padding: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.DIV0
+{
+    border: 2PX SOLID black;
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.button{
+    background-color: blue;
+}
+        </style>
+
+<script>
+    function showAlert() {
+      alert("message recieved");
+    }
+
+</script>
+
+
+    </head>
+
+    <body>
+<DIV CLASS="DIV0">
+    <label for="fname"> First Name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="lname"> Last Name:</label>
+    <input type="text" id="fname" name="fname">
+    
+    <br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"> 
+
+    Choose your gender:
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+       
+    <br><br>
+
+    <label for="email"> email:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="no"> phone number:</label>
+    <input type="text" id="fname" name="fname">
+    <br><br>
+
+    <label for="select subjects">select subjects:</label>
+
+    <select name="select subjects" id="select subjects">
+      <option value="maths">maths</option>
+      <option value="computer">computer</option>
+      <option value="chemistry">chemistry</option>
+      <option value="physics">physics</option>
+    </select>
+    <br><br>
+    <button type="button"  onclick="showAlert()">submit</button>
+      </div> 
+    
+
+
+</DIV>
+
+    </body>
+</html>

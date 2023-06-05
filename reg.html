@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="font-family: Arial, Helvetica, sans-serif; height:100%; background-image: linear-gradient(235deg, rgb(133, 166, 182), rgb(60, 209, 209));;">
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <style>
+        .main{
+            background-color: rgb(220, 230, 226);
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 4%;
+            padding: 2%;
+            border-radius: 5px;
+            height: 450px
+        }
+        .column{
+            padding:10px;
+            height: 400px;
+            width: 60%
+        }
+        label{
+            font-size: 90%;
+        }
+        input{
+            width: 100%
+        }
+        input, select{
+            height:30px;
+            border-color: rgb(200, 200, 200);
+            border-style:solid;
+            border-width: 1px;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Message Sent");
+        }
+    </script>
+    <div class="main">
+        <h2 style="margin-left: 10px;">Registration Form</h2>
+        <form action="#" methods="get">
+            <div style="display: flex;">
+                <div class="column left">
+                    
+                        <label>First Name</label><br>
+                        <input name="FName" type="text"><br><br>
+                        <label>Birthday</label><br>
+                        <input name="Date" type="date"><br><br>
+                        <label>Email</label><br>
+                        <input name="Email" type="email"><br><br>
+                        <label>Subject</label><br>
+                        <select style="width:210%" name="Subject" id="sub"><br><br>
+                            <option style="color: rgb(180, 36, 36);" value="select">--Choose Option--</option>
+                            <option value="Eng">English</option>
+                            <option value="Math">Mathematics</option>
+                            <option value="Phy">Physics</option>
+                            <option value="Chem">Chemistry</option>
+                            <option value="Bio">Biology</option>
+                            <option value="Soc">Social</option>
+                            <option value="Cse">CSE</option>
+                        </select><br><br>
+                        <input style="background-color: rgb(255, 38, 0); color: aliceblue; width: 80px; height: 36px" name="but" type="submit" value="Submit" onclick="showAlert()">
+                    
+                </div>
+                <div class="column right">
+                    
+                        <label>Last Name</label><br>
+                        <input name="LName" type="text"><br><br>
+                        <label>Gender</label><br>
+                        <label><input style="width:5%" name="Sex" type="radio" value="Male">Male</label>
+                        <label><input style="margin-left:10%; width:5%" name="Sex" type="radio" value="Female">Female</label><br><br>
+                        <label>Phone Number</label><br>
+                        <input name="Ph" type="text"><br><br>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
